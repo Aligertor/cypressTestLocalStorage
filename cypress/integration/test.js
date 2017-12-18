@@ -33,10 +33,9 @@ describe("Hello Cypress", () => {
         });
     })
 
-    describe("asyc test with wait.then does not work", () => {
+    describe("if we have a test that finished before all asyc functions finished", () => {
 
-        // skip or unskip me to make the next test fail or succeed
-        it("if we have a test that finished before all asyc functions finished", () => {
+        it("skip or move be to the end of the describe block or the next test fails", () => {
             cy.visit("/?storage=true");
         });
 
